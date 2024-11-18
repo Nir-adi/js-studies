@@ -9,29 +9,39 @@ for (let e = 10; e >= 0; e--) {
   console.log(e);
 }
 //while loop
-let counter = 0
-while (counter<=5){
-    console.log(counter)
-    counter++
+let counter = 0;
+while (counter <= 5) {
+  console.log(counter);
+  counter++;
 }
 //do while
-let number = 1
-do{
-    console.log(number)
-    number++
-} while (number<=5)
+//let number = 1
+//do{
+//  console.log(number)
+//number++
+//} while (number<=5)
 
-  //array loops
+//array loops
 
-  let numbers=[1,2,3,4,5,6,7,8,9,10]
+let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 //
-  for(let i=0;i < numbers.length; i++){
-  console.log(numbers[i])
-  }
+for (let i = 0; i < numbers.length; i++) {
+  console.log(numbers[i]);
+}
 
+// for of loop
 
-  // for of loop
+for (let element of numbers) {
+  console.log(element);
+}
 
-  for (let element of numbers){
-    console.log(element)
-  }
+// objectloops
+let person = {
+  Firstname: "Nir",
+  Lastname: "Adi",
+  Age: 30,
+  Sex: "Male",
+};
+for (let key in person) {
+  console.log(key + ": " + person[key]);
+}
